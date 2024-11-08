@@ -1,7 +1,7 @@
 import Logo from '../assets/ben10.jpg'
 const Navbar = () => {
     return (
-        <div className='px-20 py-5 flex items-center justify-between'>
+        <div className='flex items-center justify-between'>
             <div className='flex gap-3 items-center'>
                 <img src={Logo} alt="Logo" className='rounded-full w-12'/>
                 <h1 className='font-bold'>Ankit Bhagat</h1>
