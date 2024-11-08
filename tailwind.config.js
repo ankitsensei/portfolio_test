@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       fontFamily:{
-        sans:["Doto", "sans-serif"]
+        sans:["Outfit", "sans-serif"]
       }
     },
   },
