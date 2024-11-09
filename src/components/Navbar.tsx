@@ -10,7 +10,7 @@ const Navbar = () => {
                 <img src={Logo} alt="Logo" className='rounded-full w-12'/>
                 <h1 className='font-bold'>Ankit Bhagat</h1>
             </div>
-            <div>
+            <div className='px-5'>
                 <FontAwesomeIcon icon={faBars} onClick={() => setClicked(!clicked)}/>
                 {       
                     clicked ? 
