@@ -13,7 +13,7 @@ const Navbar = () => {
             </div>
             <div className='px-5'>
                 <FontAwesomeIcon icon={faBars} onClick={() => setClicked(!clicked)} className='lg:text-2xl'/>
-                {       
+                {
                     clicked ? 
                     <ul className='flex flex-col w-32 py-2 rounded-lg bg-gradient-to-r from-purple-600 to-zinc-900 justify-center items-start px-3 absolute top-16 right-0 gap-2 font-semibold z-40 lg:h-64 lg:w-60 lg:text-2xl lg:gap-3 '>
                         <li className='hover:text-purple-500 duration-300'>Home</li>
