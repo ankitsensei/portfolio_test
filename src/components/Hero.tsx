@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faChevronRight, faLocationDot} from '@fortawesome/free-solid-svg-icons'
+import { faChevronRight} from '@fortawesome/free-solid-svg-icons'
 import { faInstagram, faLinkedinIn, faXTwitter, faGithub } from '@fortawesome/free-brands-svg-icons'
 import Logo from "../assets/ben10.jpg"
 
