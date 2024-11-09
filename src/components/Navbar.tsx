@@ -12,9 +12,9 @@ const Navbar = () => {
             </div>
             <div>
                 <FontAwesomeIcon icon={faBars} onClick={() => setClicked(!clicked)}/>
-                {
+                {       
                     clicked ? 
-                    <ul className='flex flex-col w-32 py-2 rounded-lg bg-gradient-to-r from-purple-600 to-zinc-900 justify-center items-start px-3 absolute top-16 right-0 gap-2 font-semibold'>
+                    <ul className='flex flex-col w-32 py-2 rounded-lg bg-gradient-to-r from-purple-600 to-zinc-900 justify-center items-start px-3 absolute top-16 right-0 gap-2 font-semibold z-50'>
                         <li>Home</li>
                         <li>Services</li>
                         <li>Recent-Works</li>
