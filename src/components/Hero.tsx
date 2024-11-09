@@ -14,15 +14,21 @@ const Hero = () => {
                     <button className="w-[200px] h-[50px] p-5 flex items-center justify-around px rounded-full border-2 border-purple-600 text-purple-600">
                         Hire Me <FontAwesomeIcon icon={faChevronRight} />
                     </button>
-                    <button className='w-12 h-12 rounded-full border-2 border-purple-600 text-purple-600'>
-                            <FontAwesomeIcon icon={faInstagram} className='text-2xl' />
-                    </button>
-                    <button className='w-12 h-12 rounded-full border-2 border-purple-600 text-purple-600'>
-                            <FontAwesomeIcon icon={faLinkedinIn} className='text-xl' />
-                    </button>
-                    <button className='w-12 h-12 rounded-full border-2 border-purple-600 text-purple-600'>
-                            <FontAwesomeIcon icon={faXTwitter} className='text-xl' />
-                    </button>
+                        <a href="https://www.instagram.com/ankitsensei" target='_blank'>
+                            <button className='w-12 h-12 rounded-full border-2 border-purple-600 text-purple-600'>
+                                <FontAwesomeIcon icon={faInstagram} className='text-2xl' />
+                            </button>
+                        </a>
+                        <a href="https://www.linkedin.com/in/ankit-bhagat-139276241/" target='_blank'>
+                            <button className='w-12 h-12 rounded-full border-2 border-purple-600 text-purple-600'>
+                                <FontAwesomeIcon icon={faLinkedinIn} className='text-xl' />
+                            </button>
+                        </a>
+                        <a href="https://x.com/ankit_sensei" target='_blank'>
+                            <button className='w-12 h-12 rounded-full border-2 border-purple-600 text-purple-600'>
+                                <FontAwesomeIcon icon={faXTwitter} className='text-xl' />
+                            </button>
+                        </a>
                 </div>
             </div>
             <div className="w-1/2 flex justify-center">
