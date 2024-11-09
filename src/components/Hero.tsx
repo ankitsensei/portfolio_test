@@ -5,7 +5,7 @@ import Logo from "../assets/ben10.jpg"
 
 const Hero = () => {
     return (        
-        <div className="mt-10 flex flex-col gap-5 items-center w-full">
+        <div className="mt-20 flex flex-col gap-5 items-center w-full">
             <div className="flex flex-col items-center gap-5 px-2 order-2">
                 <h3 className="font-bold text-xl">I am Ankit <span className='text-sm font-normal'>(He/Him)</span></h3>
                 <h1 className="font-bold text-5xl bg-gradient-to-r from-purple-500 to-zinc-100 bg-clip-text text-transparent">Web Developer + Video Editor</h1>
@@ -18,7 +18,7 @@ const Hero = () => {
                     <div className='flex items-center gap-2'>
                         <FontAwesomeIcon icon={faUserGraduate} className='text-purple-600'/>
                         <p>Jhrakhand Rai University</p>
-                    </div>
+                    </div>  
                 </div>
                 
                 <div className='flex gap-5 items-center justify-center'>

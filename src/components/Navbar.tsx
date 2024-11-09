@@ -5,7 +5,8 @@ import { faBars} from '@fortawesome/free-solid-svg-icons'
 const Navbar = () => {
     const [clicked, setClicked] = useState(false); ;
     return (
-        <div className='flex items-center justify-between'>
+        <div className='fixed top-0 left-0 w-full p-2 z-50 bg-gradient-to-r from-[rgba(23,23,23,0.5)] to-[rgba(128,0,128,0.0)]'>
+            <div className='flex items-center justify-between'>
             <div className='flex gap-3 items-center'>
                 <img src={Logo} alt="Logo" className='rounded-full w-12'/>
                 <h1 className='font-bold'>Ankit Bhagat</h1>
@@ -14,7 +15,7 @@ const Navbar = () => {
                 <FontAwesomeIcon icon={faBars} onClick={() => setClicked(!clicked)}/>
                 {       
                     clicked ? 
-                    <ul className='flex flex-col w-32 py-2 rounded-lg bg-gradient-to-r from-purple-600 to-zinc-900 justify-center items-start px-3 absolute top-16 right-0 gap-2 font-semibold z-50'>
+                    <ul className='flex flex-col w-32 py-2 rounded-lg bg-gradient-to-r from-purple-600 to-zinc-900 justify-center items-start px-3 absolute top-16 right-0 gap-2 font-semibold z-40'>
                         <li>Home</li>
                         <li>Services</li>
                         <li>Recent-Works</li>
@@ -23,6 +24,7 @@ const Navbar = () => {
                     </ul>: null
                 }
             </div>
+        </div>  
         </div>
     )
 }
