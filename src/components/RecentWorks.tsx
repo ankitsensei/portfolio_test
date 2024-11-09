@@ -1,4 +1,4 @@
-import {useState} from 'react';
+import {useState, useRef} from 'react';
 import Video1 from "../assets/videoEdits/videoEdit1.gif"
 import Video2 from "../assets/videoEdits/videoEdit2.gif"
 import Video3 from "../assets/videoEdits/videoEdit3.gif"
@@ -12,26 +12,56 @@ const RecentWorks = () => {
     const [videoBtn, setVideoBtn] = useState(true)
     const [websiteBtn, setWebsiteBtn] = useState(true)
 
+    const allBtnRef = useRef<HTMLButtonElement>(null)
+    const videoBtnRef = useRef<HTMLButtonElement>(null)
+    const websiteBtnRef = useRef<HTMLButtonElement>(null)
     const allHandleClick = () => {
         setVideoBtn(true)
         setWebsiteBtn(true)
-        const AllBtn = document.querySelector(".AllBtn")
-            
+        if (allBtnRef.current) {
+            allBtnRef.current.style.backgroundColor = "purple";
+        }
+        if (videoBtnRef.current) {
+            videoBtnRef.current.style.backgroundColor = "transparent";
+        }
+        if (websiteBtnRef.current) {
+            websiteBtnRef.current.style.backgroundColor = "transparent";
+        }
     }
     const videoHandleClick = () => {
-        // here
+        setVideoBtn(true)
+        setWebsiteBtn(false)
+        if (allBtnRef.current){
+            allBtnRef.current.style.backgroundColor = "transparent";
+        }
+        if (videoBtnRef.current){
+            videoBtnRef.current.style.backgroundColor = "purple";
+        }
+        if (websiteBtnRef.current){
+            websiteBtnRef.current.style.backgroundColor = "transparent"
+        }
     }
     const websiteHandleClick = () => {
-        // here
+        setVideoBtn(false)
+        setWebsiteBtn(true)
+        if (allBtnRef.current){
+            allBtnRef.current.style.backgroundColor = "transparent";
+        }
+        if (videoBtnRef.current){
+            videoBtnRef.current.style.backgroundColor = "transparent";
+        }
+        if (websiteBtnRef.current){
+            websiteBtnRef.current.style.backgroundColor = "purple"
+        }
     }
     return (
         <div className="mt-20 flex flex-col items-center">
             
             <h1 className="font-bold text-5xl bg-gradient-to-r from-pink-600 via-purple-600 to-blue-400 bg-clip-text text-transparent">Recent Works</h1>
             <div className="flex gap-3 bg-black px-4 py-2 rounded-lg">
-                <button className="AllBtn w-20 h-7 bg-rose-600 rounded-md" onClick={() => allHandleClick()}>All</button>
-                <button className="VideoBtn w-20 h-7 bg-rose-600 rounded-md" onClick={() => videoHandleClick()}>Videos</button>
-                <button className="WebsiteBtn w-20 h-7 bg-rose-600 rounded-md" onClick={() => websiteHandleClick()}>Websites</button>
+                <button className="AllBtn w-20 h-7 bg-[#7f007f] rounded-md" onClick={() => allHandleClick()} ref={allBtnRef}>All</button>
+                <button className="VideoBtn w-20 h-7 rounded-md" onClick={() => videoHandleClick()} ref={videoBtnRef}>Videos</button>
+                <button className="WebsiteBtn w-20 h-7 rounded-md" onClick={() => websiteHandleClick()} ref={websiteBtnRef}>Websites</button>
             </div>
             
             {
