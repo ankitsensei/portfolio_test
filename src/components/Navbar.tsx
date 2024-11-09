@@ -3,7 +3,7 @@ import Logo from '../assets/ben10.jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars} from '@fortawesome/free-solid-svg-icons'
 const Navbar = () => {
-    const [clicked, setClicked] = useState(true); ;
+    const [clicked, setClicked] = useState(false); ;
     return (
         <div className='fixed top-0 left-0 w-full p-2 z-50 bg-gradient-to-r from-[rgba(23,23,23,0.5)] to-[rgba(128,0,128,0.0)] lg:px-20'>
             <div className='flex items-center justify-between'>
