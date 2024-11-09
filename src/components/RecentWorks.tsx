@@ -58,7 +58,7 @@ const RecentWorks = () => {
         <div className="mt-20 flex flex-col items-center">
             
             <h1 className="font-bold text-5xl bg-gradient-to-r from-pink-600 via-purple-600 to-blue-400 bg-clip-text text-transparent">Recent Works</h1>
-            <div className="flex gap-3 bg-black px-4 py-2 rounded-lg">
+            <div className="flex gap-3 bg-black px-4 py-2 rounded-lg lg:mt-2">
                 <button className="AllBtn w-20 h-7 bg-[#7f007f] rounded-md" onClick={() => allHandleClick()} ref={allBtnRef}>All</button>
                 <button className="VideoBtn w-20 h-7 rounded-md" onClick={() => videoHandleClick()} ref={videoBtnRef}>Videos</button>
                 <button className="WebsiteBtn w-20 h-7 rounded-md" onClick={() => websiteHandleClick()} ref={websiteBtnRef}>Websites</button>
@@ -66,17 +66,17 @@ const RecentWorks = () => {
             
             {
                 videoBtn ? 
-                <div className="flex flex-wrap items-center justify-center gap-5 mt-5">
-                <div className="w-40 h-full bg-white bg-opacity-10 rounded-md">
+                <div className="flex flex-wrap items-center justify-center gap-5 mt-5 lg:mt-10">
+                <div className="w-40 h-full bg-white bg-opacity-10 rounded-md lg:w-80">
                     <img src={Video1} alt="video1" className="p-2 rounded-lg"/>
                 </div>
-                <div className="w-40 h-full bg-white bg-opacity-10 rounded-md">
+                <div className="w-40 h-full bg-white bg-opacity-10 rounded-md lg:w-80">
                     <img src={Video2} alt="video2" className="p-2 rounded-lg"/>
                 </div>
-                <div className="w-40 h-full bg-white bg-opacity-10 rounded-md">
+                <div className="w-40 h-full bg-white bg-opacity-10 rounded-md lg:w-80">
                     <img src={Video3} alt="video2" className="p-2 rounded-lg"/>
                 </div>
-                <div className="w-40 h-full bg-white bg-opacity-10 rounded-md">
+                <div className="w-40 h-full bg-white bg-opacity-10 rounded-md lg:w-80">
                     <img src={Video4} alt="video2" className="p-2 rounded-lg"/>
                 </div>
             </div> : null
@@ -84,16 +84,16 @@ const RecentWorks = () => {
             {
                 websiteBtn ?
                 <div className="flex flex-wrap items-center justify-center gap-5 mt-5">
-                <div className="w-40 h-full bg-white bg-opacity-10 rounded-md">
+                <div className="w-40 h-full bg-white bg-opacity-10 rounded-md lg:w-80">
                     <img src={Website1} alt="video1" className="p-2 rounded-lg"/>
                 </div>
-                <div className="w-40 h-full bg-white bg-opacity-10 rounded-md">
+                <div className="w-40 h-full bg-white bg-opacity-10 rounded-md lg:w-80">
                     <img src={Website2} alt="video2" className="p-2 rounded-lg"/>
                 </div>
-                <div className="w-40 h-full bg-white bg-opacity-10 rounded-md">
+                <div className="w-40 h-full bg-white bg-opacity-10 rounded-md lg:w-80">
                     <img src={Website3} alt="video2" className="p-2 rounded-lg"/>
                 </div>
-                <div className="w-40 h-full bg-white bg-opacity-10 rounded-md">
+                <div className="w-40 h-full bg-white bg-opacity-10 rounded-md lg:w-80">
                     <img src={Website4} alt="video2" className="p-2 rounded-lg"/>
                 </div>
             </div> : null
