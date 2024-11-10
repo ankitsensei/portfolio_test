@@ -20,11 +20,11 @@ const Hero = () => {
                         <p>Jhrakhand Rai University</p>
                     </div>  
                 </div>
-                <div className='flex gap-5 items-center justify-center lg:mt-5'>
+                <div className='flex flex-col gap-2 items-center justify-center lg:mt-5'>
                     <button className="w-40 h-12 p-5 flex items-center justify-around px rounded-full border-2 border-purple-600 text-purple-400">
                         Hire Me <FontAwesomeIcon icon={faChevronRight} />
                     </button>
-                    <div className='flex items-center gap-2'>
+                    <div className='flex items-center gap-1'>
                         <a href="https://www.instagram.com/ankitsensei" target='_blank'>
                             <button className='w-12 h-12 rounded-full border-2 border-purple-600 text-purple-600'>
                                 <FontAwesomeIcon icon={faInstagram} className='text-2xl' />
